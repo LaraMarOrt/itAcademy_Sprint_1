@@ -1,0 +1,126 @@
+main {
+    background: #fff;
+    max-width: 1200px;
+  }
+  
+  /* Formato general bloques. He querido utilizar etiquetas semánticas pero utilizando este div podía ahorranme padding repetitivos*/
+  div {
+    padding: 15px;
+  }
+  
+  /* Header formato general*/
+  header {
+    border: #000;
+    border-style: solid;
+    border-width: 15px;
+  }
+  
+  /* header container flexbox*/
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #4e4e6a;
+  }
+  
+  /*Estilos columnas laterales*/
+  .col-1 {
+    background-color: #e66464;
+    width: 15%;
+    margin: 10px;
+  }
+  
+  
+  /*Estilos columna central*/
+  .col-2 {
+    flex-grow: 1;
+    background-color: #e66464;
+    margin: 10px;
+  }
+  
+  /* Creamos el contenedor del menú y le damos estilos y flex */
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #e78f2a;
+    padding: 15px;
+    border-top-color: #000;
+    border-top-style: solid;
+    border-top-width: 8px;
+  }
+  
+  /* Estilos del item del menú */
+  .col-3 {
+    background-color: #e8ce27;
+    width: 100%;
+    margin: 10px
+  }
+  
+  /* Article formato general del contenedor*/
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: #000;
+    border-style: solid;
+    border-width: 15px;
+  
+  }
+  
+  /* parte izq/sup del article*/
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #4e4e6a;
+    width: 65%;
+    padding: 15px;
+  }
+  
+  .col-4 {
+    width: 33%;
+    flex-grow: 2;
+    background-color: #1f6cb0;
+    margin: 10px;
+  }
+  
+  .col-5 {
+    width: 100%;
+    flex-grow: 1;
+    background-color: #70a3c4;
+    margin: 10px;
+  }
+  
+  /* parte derecha/inf del article*/
+  aside {
+    background-color: #f73f52;
+    flex-grow: 1;
+    padding: 15px;
+    border-left-color: #000;
+    border-left-style: solid;
+    border-left-width: 15px;
+  }
+  
+  .col-6 {
+    background-color: #feea85;
+    margin: 10px;
+  }
+  
+  /* Footer elementos generales. En el footer no hace falta el flex*/
+  footer {
+    border: #000;
+    border-style: solid;
+    border-width: 15px;
+  }
+  
+  /* Footer item*/
+  .col-7 {
+    background-color: #e8b827;
+  }
