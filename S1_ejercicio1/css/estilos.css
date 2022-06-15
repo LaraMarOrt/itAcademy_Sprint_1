@@ -124,3 +124,27 @@ main {
   .col-7 {
     background-color: #e8b827;
   }
+
+  /* Para tabletas */
+@media only screen and (max-width: 991px) {
+ 
+  /* Se cambia el color al borde de la section */
+  article {
+  border-color: #fff315;
+  border-style: solid;
+  border-width: 15px;
+  }
+
+  /* Ponemos una sección debajo de otra quitando el width al section */
+  section {
+    width: 100%;
+  }
+
+  /* Se cambia el borde de sitio y se pone en top al ajustarse el width */  
+  aside {
+    border-left-width: 0px;
+    border-top-color: #fff315;
+    border-top-style: solid;
+    border-top-width: 15px;
+  }
+}
