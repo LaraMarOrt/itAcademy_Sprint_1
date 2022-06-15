@@ -1,0 +1,144 @@
+main {
+    background: #fff;
+    max-width: 1200px;
+  }
+  
+  /* Formato general bloques. He querido utilizar etiquetas semánticas pero utilizando este div podía ahorranme padding repetitivos*/
+  div {
+    padding: 15px;
+  }
+  
+  /* Header formato general*/
+  header {
+    border: #000;
+    border-style: solid;
+    border-width: 15px;
+  }
+  
+  /* header container flexbox*/
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-color: #4e4e6a;
+  }
+  
+  /*Estilos columnas laterales*/
+  .col-1 {
+    background-color: #e66464;
+    margin: 10px;
+  }
+  
+  
+  /*Estilos columna central*/
+  .col-2 {
+    background-color: #e66464;
+    margin: 10px;
+  }
+  
+  /* Creamos el contenedor del menú y le damos estilos y flex */
+  nav {
+    background-color: #e78f2a;
+    padding: 15px;
+    border-top-color: #000;
+    border-top-style: solid;
+    border-top-width: 8px;
+  }
+  
+  /* Estilos del item del menú */
+  .col-3 {
+    background-color: #e8ce27;
+    margin: 10px
+  }
+  
+  /* Article formato general del contenedor*/
+  article {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: #000;
+    border-style: solid;
+    border-width: 15px;
+  
+  }
+  
+  /* parte izq/sup del article*/
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #4e4e6a;
+    padding: 15px;
+  }
+  
+  .col-4 {
+    background-color: #1f6cb0;
+    margin: 10px;
+  }
+  
+  .col-5 {
+    background-color: #70a3c4;
+    margin: 10px;
+    grid-column: 1/3;
+  }
+  
+  /* parte derecha/inf del article*/
+  aside {
+    background-color: #f73f52;
+    padding: 15px;
+    border-left-color: #000;
+    border-left-style: solid;
+    border-left-width: 15px;
+  }
+  
+  .col-6 {
+    background-color: #feea85;
+    margin: 10px;
+  }
+  
+  /* Footer elementos generales. En el footer no hace falta el flex*/
+  footer {
+    border: #000;
+    border-style: solid;
+    border-width: 15px;
+  }
+  
+  /* Footer item*/
+  .col-7 {
+    background-color: #e8b827;
+  }
+  
+  /* Para tabletas */
+  @media only screen and (max-width: 991px) {
+   
+    /* Se cambia el color al borde de la section */
+    article {
+    border-color: #fff315;
+    border-style: solid;
+    border-width: 15px;
+    grid-template-columns: 1fr;
+    }
+  
+  
+    /* Se cambia el borde de sitio y se pone en top al ajustarse el width */  
+    aside {
+      border-left-width: 0px;
+      border-top-color: #fff315;
+      border-top-style: solid;
+      border-top-width: 15px;
+    }
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 768px) {
+  
+  /* Adecuamos las columnas con width al nuevo ancho de 100 a las columnas que tenían afectación*/
+  .header-container {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    grid-template-columns: 1fr;
+  }
+  
+  .col-5 {
+    grid-column: 1;
+  }
+  }
