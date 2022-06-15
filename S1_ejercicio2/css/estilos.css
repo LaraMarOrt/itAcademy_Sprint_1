@@ -91,3 +91,146 @@ h1 {
     color: #db6666;
     text-align: center;
 }
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  border: #fff;
+  border-style: solid;
+  border-width: 8px 0px;
+}
+
+/* parte izq/sup del article*/
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2d2d2;
+  width: 70%;
+  padding: 8px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
+
+.col-4 {
+  width: 30%;
+  flex-grow: 2;
+  margin: 10px;
+  background-color: #e3e3e3;
+  color: #565656;
+}
+
+.col-4 img {
+  width: 100%;
+
+}
+
+.col-4 h2 {
+  margin-top: -2px;
+  padding: 10px 0px 2px 5px;
+  background-color: #db6666;
+  color: #e3e3e3;
+}
+
+.col-4 p {
+  column-count: 2;
+}
+
+.col-4 a {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
+
+.fecha {
+  color: #f1e86e;
+  margin-top: -25px;
+  padding-left: 5px;
+}
+
+.col-5 {
+  width: 100%;
+  flex-grow: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+/* parte derecha/inf del article*/
+aside {
+  background-color: #d2d2d2;
+  flex-grow: 1;
+  width: 16%;
+  padding: 8px;
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 8px;
+  text-align: center;
+}
+
+.col-6 {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.color-6 p {
+  color: #000;
+  text-align: center;
+}
+
+/* Footer elementos generales. En el footer no hace falta el flex*/
+.col-7 {
+  background-color: #ececec;
+  text-align: center;
+  border: #d2d2d2;
+  border-style: solid;
+  border-width: 0px 8px;
+}
+
+
+/* Para tabletas */
+@media only screen and (max-width: 991px) {
+
+  /* Ponemos una sección debajo de otra quitando el width al section */
+  section {
+    width: 100%;
+  }
+
+  /* Se cambia el borde de sitio y se pone en top al ajustarse el width */  
+  aside {
+    border-left-width: 0px;
+    border-top-color: #fff;
+    border-top-style: solid;
+    border-top-width: 8px;
+  }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+/* Adecuamos las columnas con width al nuevo ancho de 100 a las columnas que tenían afectación*/
+.titulo {
+  padding: 15px 15px 0px 15px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+ul {
+  flex-direction: column;
+}
+
+.col-4 {
+  width: 100%;
+  column-count: 1;
+}
+}
