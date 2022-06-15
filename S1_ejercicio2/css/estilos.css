@@ -1,0 +1,93 @@
+main {
+    /* max-width: 1200px; En este caso no se especifica */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    padding: 5px;
+}
+
+header {
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    /* background-size: cover; */
+}
+
+/* header container flexbox*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Logo*/
+.col-1 {
+    width: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    text-align: center;
+}
+
+
+/*Menú central*/
+.col-2 {
+    flex-grow: 1;
+}
+
+i {
+    margin: 6px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    /* padding: 15px; */
+}
+
+li {
+    margin-right: 30px;
+    font-family: 'Arial';
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d85858;
+}
+
+
+/* Título naranja*/
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 90px 90px 0px 90px;
+}
+
+.col-3 {
+    background-color: #c7c7c94b;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+h1 {
+    color: #db6666;
+    text-align: center;
+}
